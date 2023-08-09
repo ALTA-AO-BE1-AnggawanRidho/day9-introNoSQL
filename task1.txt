@@ -1,0 +1,67 @@
+Berikut adalah contoh NoSQL pada setiap kategori beserta informasi tentang mekanisme kerja, penggunaan, keunggulan, dan kekurangannya:
+
+1. Key/Value Store: Aerospike
+
+    Mekanisme Kerja:
+    Aerospike adalah basis data Key/Value yang dirancang untuk kinerja tinggi. Data disimpan dalam pasangan kunci-nilai dan diindeks menggunakan kunci tersebut. Aerospike menggunakan penyimpanan in-memory dan disk, serta teknik kompresi data untuk efisiensi.
+
+    Use Case:
+    Aerospike cocok untuk aplikasi dengan kebutuhan akses cepat dan ketersediaan tinggi, seperti sistem cache, analisis data cepat, manajemen sesi, dan personalisasi konten.
+
+    Keunggulan:
+        - Performa tinggi dan latensi rendah.
+        - Skalabilitas horizontal.
+        - Ketersediaan tinggi dan toleransi terhadap kesalahan.
+
+    Kekurangan:
+        - Tidak cocok untuk query kompleks atau analisis data yang kompleks.
+        - Fitur query terbatas dibandingkan beberapa solusi lain.
+
+2. Column-Family Store: ScyllaDB
+
+    Mekanisme Kerja:
+    ScyllaDB adalah basis data Column-Family yang dirancang untuk kinerja tinggi dan skala besar. Data disimpan dalam bentuk baris dan kolom yang dapat diindeks berdasarkan kunci baris. ScyllaDB menggunakan penyimpanan in-memory dan disk untuk akses cepat.
+
+    Use Case:
+    ScyllaDB cocok untuk aplikasi yang membutuhkan kinerja tinggi dan ketersediaan tinggi, seperti analisis data, sistem manajemen konten, dan rekam medis.
+
+    Keunggulan:
+        - Performa tinggi dan latensi rendah.
+        - Skalabilitas horizontal.
+        - Ketersediaan tinggi dan toleransi terhadap kesalahan.
+
+    Kekurangan:
+        - Kurang cocok untuk query yang melibatkan banyak join atau analisis data kompleks.
+        - Pengaturan dan konfigurasi yang kompleks.
+
+3. Graph Database: JanusGraph
+
+    Mekanisme Kerja:
+    JanusGraph adalah basis data grafik yang mendukung representasi data dalam bentuk node dan edge. Data digunakan untuk mewakili hubungan antar entitas. JanusGraph menggunakan struktur indeks dan penyimpanan terdistribusi untuk akses cepat.
+
+    Use Case:
+    JanusGraph cocok untuk aplikasi yang membutuhkan analisis hubungan kompleks, seperti sistem rekomendasi, jejaring sosial, dan analisis jaringan.
+
+    Keunggulan:
+        - Representasi hubungan yang kuat dan query grafik yang efisien.
+        - Skalabilitas horizontal dan dukungan untuk data yang besar.
+
+    Kekurangan:
+        - Tidak cocok untuk data dengan skema yang statis atau sederhana.
+        - Performa baca lebih baik daripada tulis.
+
+4. Document-Based Store: CouchDB
+
+    Mekanisme Kerja:
+    CouchDB adalah basis data dokument NoSQL yang menggunakan model data skema fleksibel. Data disimpan dalam dokumen JSON yang dapat diindeks dan diquery. CouchDB menggunakan konsep "Multi-Version Concurrency Control" (MVCC) untuk mengatur transaksi dan konsistensi.
+
+    Use Case:
+    CouchDB cocok untuk aplikasi yang membutuhkan replikasi data yang terdistribusi, manajemen konten, dan aplikasi berbasis dokumen.
+
+    Keunggulan:
+        - Skalabilitas horizontal dan dukungan untuk replikasi data.
+        - Model dokumen yang fleksibel dan konsistensi yang baik.
+
+    Kekurangan:
+        - Tidak cocok untuk query kompleks yang melibatkan banyak join.
+        - Tidak mendukung query grafik.
